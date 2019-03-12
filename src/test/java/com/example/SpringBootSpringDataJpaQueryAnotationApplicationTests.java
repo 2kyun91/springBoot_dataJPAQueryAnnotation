@@ -18,25 +18,25 @@ public class SpringBootSpringDataJpaQueryAnotationApplicationTests {
 	@Autowired
 	private BoardRepository boardRepo;
 	
-//	@Test
-//	public void testByTitle() {
-//		boardRepo.findByTitle("17").forEach(board -> System.out.println(board));
-//	}
-//	
-//	@Test
-//	public void testByContent() {
-//		boardRepo.findByContent("15번").forEach(board -> System.out.println(board));
-//	}
-//	
-//	@Test
-//	public void testByWriter() {
-//		boardRepo.findByWriter("user02").forEach(board -> System.out.println(board));
-//	}
-//	
-//	@Test
-//	public void testByTitle2() { // 필요한 칼럼만 조회하는 경우
-//		boardRepo.findByTitle2("123번").forEach(arr -> System.out.println(Arrays.toString(arr)));
-//	}
+	@Test
+	public void testByTitle() {
+		boardRepo.findByTitle("17").forEach(board -> System.out.println(board));
+	}
+	
+	@Test
+	public void testByContent() {
+		boardRepo.findByContent("15번").forEach(board -> System.out.println(board));
+	}
+	
+	@Test
+	public void testByWriter() {
+		boardRepo.findByWriter("user02").forEach(board -> System.out.println(board));
+	}
+	
+	@Test
+	public void testByTitle2() { // 필요한 칼럼만 조회하는 경우
+		boardRepo.findByTitle2("123번").forEach(arr -> System.out.println(Arrays.toString(arr)));
+	}
 	
 	@Test
 	public void testByPaging() {
