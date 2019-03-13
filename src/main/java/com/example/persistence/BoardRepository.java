@@ -4,12 +4,17 @@ import java.util.List;
 
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.querydsl.QuerydslPredicateExecutor;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
 
 import com.example.dao.Board;
-
-public interface BoardRepository extends CrudRepository<Board, Long> {
+/*
+ * Predicate는 '이 조건이 맞다'고 판단하는 근거를 함수로 제공하는것이다.
+ * Repository에서 Predicate를 파라미터로 전달하기 위해서는 QuerydslPredicateExecutor<T> 인터페이스를 상속받는다.
+ * 리턴타입은 boolean으로 주로 BooleanBuilder를 이용해서 생성한다.
+ * */
+public interface BoardRepository extends CrudRepository<Board, Long>, QuerydslPredicateExecutor<Board> {
 	
 	/*
 	 * @Query에는 JPQL을 이용하는데 JPQL은 JPA에서 사용하는 쿼리언어이다.
