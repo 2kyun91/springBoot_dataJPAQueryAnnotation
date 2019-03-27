@@ -8,7 +8,7 @@ import org.springframework.data.querydsl.QuerydslPredicateExecutor;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
 
-import com.example.dao.Board;
+import com.example.dto.Board;
 /*
  * Predicate는 '이 조건이 맞다'고 판단하는 근거를 함수로 제공하는것이다.
  * Repository에서 Predicate를 파라미터로 전달하기 위해서는 QuerydslPredicateExecutor<T> 인터페이스를 상속받는다.

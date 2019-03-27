@@ -1,4 +1,4 @@
-package com.example.dao;
+package com.example.dto;
 
 import java.sql.Timestamp;
 

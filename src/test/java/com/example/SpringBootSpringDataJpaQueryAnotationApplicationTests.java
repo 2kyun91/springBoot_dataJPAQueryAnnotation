@@ -11,8 +11,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.example.dao.Board;
-import com.example.dao.QBoard;
+import com.example.dto.QBoard;
+import com.example.dto.Board;
 import com.example.persistence.BoardRepository;
 import com.querydsl.core.BooleanBuilder;
 
